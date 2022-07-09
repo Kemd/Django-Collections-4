@@ -1,10 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Game
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+
 
 # Create your views here.
 def home(request):
-    return HttpResponse('Hello')
+    return render(request, 'home.html')
 
 def about(request):
     return render(request, 'about.html')
@@ -33,3 +35,18 @@ def games_index(request):
 def games_detail(request, game_id):
     game = Game.objects.get(id = game_id)
     return render(request, 'games/detail.html', { 'game': game})
+
+# add a game page 
+class GameCreate(CreateView):
+    model = Game
+    fields = ['name', 'year', 'desc', 'genre', 'platform']
+
+# edit a game page 
+class GameUpdate(UpdateView):
+    model = Game
+    fields = ['year', 'desc', 'genre', 'platform']
+
+# delete a game page 
+class GameDelete(DeleteView):
+    model = Game
+    success_url = '/games/'

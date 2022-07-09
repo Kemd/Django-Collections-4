@@ -28,13 +28,16 @@
             </li>
           </ul>
           <ul class="right">
-            <li><a href="/about">About</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'games_create' %}">Add a game</a></li>
+            <li><a href="{% url 'index' %}"> view all games</a></li>
           </ul>
+
         </div>
       </nav>
     </header>
     <main class="container">{% block content %} {% endblock %}</main>
-    <footer class="page-footer">
+    <footer class="footer-copyright">
       <div class="center">
         All Rights Reserved, &copy; 2022 Game Collection &nbsp;
       </div>
