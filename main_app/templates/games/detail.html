@@ -33,4 +33,37 @@
     <a href="{% url 'games_delete' game.id %}">Delete</a>
   </div>
 </div>
+<!-- Date  -->
+<div class="col s6">
+  <form action="{% url 'add_playdate' game.id %}" method="POST">
+    {% csrf_token %} {{ playdate_form.as_p }}
+    <input type="submit" value="Add a date for game played" class="btn green">
+  </form>
+  <table class="striped">
+    <thead>
+      <tr>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for date in game.date_set.all %}
+      <tr>
+        <td>{{date.date}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+</div>
+
+
+<script>
+  var dateEl = document.getElementById('id_date');
+  M.Datepicker.init(dateEl, {
+    format: 'yyyy-mm-dd',
+    defaultDate: new Date(),
+    setDefaultDate: true,
+    autoClose: true
+  });
+</script>
 {% endblock %}
