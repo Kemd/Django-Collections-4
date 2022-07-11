@@ -2,11 +2,11 @@
 
 <h1>Game details</h1>
 
-<div class="card">
+<div class="card medium">
   <div class="card-content">
     <span class="card-title">{{game.name}}</span>
     <h4>Genre(s): {{game.genre}}</h4>
-    <h4>description: {{game.desc}}</h4>
+    <h4>Description: {{game.desc}}</h4>
     <h4>Year Released: {{game.year}}</h4>
     {% if 'PC' in game.platform %}
     <h4>Played on: {{game.platform}}</h4>
@@ -25,7 +25,7 @@
       />
     </h4>
     {% else %}
-    <h4>Platform(s): {{game.platform}}</h4>
+    <h4>Played on: {{game.platform}}</h4>
     {% endif %}
   </div>
   <div class="card-action">

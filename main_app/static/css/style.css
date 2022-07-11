@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  /* background-color: rgb(76, 87, 96); */
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(42, 40, 40) 51%,
+    rgba(54, 110, 121, 1) 100%
+  );
+}
+
+.container {
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(42, 40, 40) 51%,
+    rgba(54, 110, 121, 1) 100%
+  );
+}
+
+.navbar,
+.page-footer {
+  background-color: rgb(166, 135, 12);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  padding-top: 0;
+  text-align: center;
+}
+
+.game-container {
+  /* border: 5px solid red; */
+  margin-bottom: 40px;
+}
+
+.adjust {
+  position: relative;
+  bottom: 30px;
+  margin: 0 450px 0 450px;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.bg-radial {
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(42, 40, 40) 51%,
+    rgba(54, 110, 121, 1) 100%
+  );
+}
+
+/* =========================== */
+/* Animations  */

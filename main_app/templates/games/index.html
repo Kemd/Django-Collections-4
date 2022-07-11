@@ -2,33 +2,36 @@
 <h1>Games List</h1>
 
 {% for game in games %}
-<div class="card">
+<div class="game-container card">
+  <a href="{% url 'detail' game.id %}">
+    <div class="card-content z-depth-5 adjust bg-radial">
+      <div class="card-title center">{{ game.name }}</div>
+    </div>
+  </a>
+
+  <p class="card-content center">{{game.desc }}</p>
+
+  <div class="purple darken-1 white-text">Released in - {{ game.year }} and played on {{ game.platform }}</div>
+</div>
+<!-- <div class="card small">
   <a href="{% url 'detail' game.id %}">
     <div class="card-content">
-      <span class="card-title">{{game.name}}</span>
-      <h4>Genre(s): {{game.genre}}</h4>
-      <h4>description: {{game.desc}}</h4>
-      <h4>Year Released: {{game.year}}</h4>
+      <h2>
+        <span class="card-title">{{game.name}}</span>
+      </h2>
       {% if 'PC' in game.platform %}
       <h4>Played on: {{game.platform}}</h4>
-      <h4>
-        <img
-          src="https://c.tenor.com/lnHy5A_HnVMAAAAC/pc-master-race-gaming.gif"
-          alt="pc masterrace meme"
-        />
-      </h4>
+
       {% elif 'PS4' in game.platform %}
       <h4>Played on: {{game.platform}}</h4>
-      <h4>
-        <img
-          src="https://s3.memeshappen.com/memes/You-Play-PS4--I-do-PC-master-Race-meme-23700.jpg"
-          alt="PS4 things"
-        />
-      </h4>
+
+      {% elif 'xbox' in game.platform %}
+      <h4>Played on: {{game.platform}}</h4>
+
       {% else %}
-      <h4>Platform(s): {{game.platform}}</h4>
+      <h4>Played on: {{game.platform}}</h4>
       {% endif %}
     </div>
   </a>
-</div>
+</div> -->
 {% endfor %} {% endblock %}
