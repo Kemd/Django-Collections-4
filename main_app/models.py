@@ -16,3 +16,4 @@ class Game(models.Model):
     def get_absolute_url(self):
         return reverse('detail', kwargs={'game_id': self.id})
 
+

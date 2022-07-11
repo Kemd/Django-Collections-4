@@ -3,23 +3,9 @@ body {
   min-height: 100vh;
   flex-direction: column;
   /* background-color: rgb(76, 87, 96); */
-  background: rgb(2, 0, 36);
-  background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgb(42, 40, 40) 51%,
-    rgba(54, 110, 121, 1) 100%
-  );
+  /* background: rgb(2, 0, 36); */
 }
 
-.container {
-  background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgb(42, 40, 40) 51%,
-    rgba(54, 110, 121, 1) 100%
-  );
-}
 
 .navbar,
 .page-footer {
