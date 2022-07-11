@@ -2,11 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Game
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+import requests
 
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html')
+    response = requests.get('https://www.mmobomb.com/api1/games').json()
+    return render(request, 'home.html', {'response': response})
 
 def about(request):
     return render(request, 'about.html')

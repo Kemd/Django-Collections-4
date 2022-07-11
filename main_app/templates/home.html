@@ -6,4 +6,28 @@
 
 <p>Get started creating your games collection</p>
 
+{% for i in response %}
+<div class="row">
+    <div class="col s12 m3 13">
+        {{ i.title }}
+        <br />
+        {{i.genre}}
+    </div>
+    <div class="col s12 m5 19">
+        <img src="{{ i.thumbnail }}" alt="{{ i.title }}">
+    </div>
+    <div class="col s12 m4">
+        {{ i.publisher }}
+        <br />
+        {{ i.developer }}
+    </div>
+    <hr />
+</div>
+
+
+<!-- {{ i.title }}
+<img src="{{ i.thumbnail }}" alt="image">
+<p>{{ i.short_description }}</p> -->
+{% endfor %}
+
 {% endblock %}

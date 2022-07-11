@@ -34,6 +34,7 @@ footer {
 
 .card {
   border-radius: 10px;
+  border: red 1px solid;
 }
 
 .bg-radial {
@@ -44,6 +45,7 @@ footer {
     rgba(54, 110, 121, 1) 100%
   );
 }
+
 
 /* =========================== */
 /* Animations  */
