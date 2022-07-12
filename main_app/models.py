@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 class Game(models.Model):
     name = models.CharField(max_length=100)
     year = models.IntegerField()
-    desc = models.TextField(max_length=250)
+    description = models.TextField(max_length=250)
     genre = models.CharField(max_length=100)
     platform = models.CharField(max_length=100)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
