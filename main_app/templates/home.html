@@ -1,36 +1,45 @@
 {% extends 'base.html' %} {% block content %}
 
 <h1>Home</h1>
-<hr/>
-<hr/>
+<hr />
+<hr />
 
-<h5 class="">Get started creating your games collection by
-    <a href="{% url 'signup' %}" class="green-text hover">Signing Up</a>
+<h5 class="">
+  Get started creating your games collection by
+  <a href="{% url 'signup' %}" class="green-text hover">Signing Up</a>
 </h5>
 <br />
 
 {% for i in response %}
 <div class="row">
-    <div class="col s12 m3 13">
-        {{ i.title }}
-        <br />
-        {{i.genre}}
+  <div class="col s12 m7">
+    <div class="card">
+      <a href="">
+        <div class="card-image">
+          <img src="{{ i.thumbnail }}" />
+          <span class="card-title purple darken-1 white-text">{{i.title}}</span>
+        </div>
+      </a>
+      <div class="card-content">
+        <p>{{ i.short_description }}</p>
+      </div>
+      <div class="card-action">
+        <a href="{{i.game_url}}">See the game</a>
+      </div>
     </div>
-    <div class="col s12 m5 19">
-        <img src="{{ i.thumbnail }}" alt="{{ i.title }}">
-    </div>
-    <div class="col s12 m4">
-        {{ i.publisher }}
-        <br />
-        {{ i.developer }}
-    </div>
-    <hr />
+  </div>
 </div>
 
-
-<!-- {{ i.title }}
-<img src="{{ i.thumbnail }}" alt="image">
-<p>{{ i.short_description }}</p> -->
-{% endfor %}
-
-{% endblock %}
+<!-- <div class="game-container card">
+  <div class="card-content z-depth-5 adjust">
+    <img src="{{ i.thumbnail }}" alt="{{ i.title }}" />
+    <p>{{ i.title }}</p>
+    <p>{{i.genre}}</p>
+  </div>
+  <div class="purple darken-1 white-text">
+    <p>{{ i.publisher }}</p>
+    <p>{{ i.developer }}</p>
+  </div>
+  <hr />
+</div> -->
+{% endfor %} {% endblock %}
