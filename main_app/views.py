@@ -49,6 +49,12 @@ class GameCreate(LoginRequiredMixin, CreateView):
     model = Game
     fields = ['name', 'year', 'desc', 'genre', 'platform']
 
+    success_url = '/games/'
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super().form_valid(form)
+
 # edit a game page 
 class GameUpdate(LoginRequiredMixin, UpdateView):
     model = Game

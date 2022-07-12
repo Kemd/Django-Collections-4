@@ -2,8 +2,6 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  /* background-color: rgb(76, 87, 96); */
-  /* background: rgb(2, 0, 36); */
 }
 
 
@@ -22,7 +20,6 @@ footer {
 }
 
 .game-container {
-  /* border: 5px solid red; */
   margin-bottom: 40px;
 }
 
