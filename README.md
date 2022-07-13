@@ -1,6 +1,6 @@
 # Game Collection
 
-### FUll CRUD Django app where you can add and keep track of games played over the years on any platform.
+### FUll CRUD Django app where you can add and keep track of games played over the years on any platform. All in one place.
 
 ---
 
