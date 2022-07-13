@@ -6,10 +6,11 @@
 
 ## Technolgies and tools
 
-  - Django python
+  - Django
+  - Python
   - Postgresql
   - Materialize
-  - CSS3
+  - CSS
   
 ---
 
