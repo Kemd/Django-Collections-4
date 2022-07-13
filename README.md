@@ -14,9 +14,9 @@
 ---
 
 ### App images
-  [Imgur](https://i.imgur.com/LQR0FzV.png)
+  ![Imgur](https://i.imgur.com/LQR0FzV.png)
 ---
-[Imgur](https://i.imgur.com/bBe2TkT.png)
+  ![Imgur](https://i.imgur.com/bBe2TkT.png)
 
 ---
 
