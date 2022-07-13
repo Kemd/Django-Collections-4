@@ -29,7 +29,7 @@ footer {
   margin: 0 450px 0 450px;
 }
 
-.card {
+.card:hover {
   border-radius: 10px;
   border: red 1px solid;
 }
@@ -41,6 +41,10 @@ footer {
     rgb(42, 40, 40) 51%,
     rgba(54, 110, 121, 1) 100%
   );
+}
+
+.home-container {
+  border: 5px solid blue;
 }
 
 

@@ -11,20 +11,24 @@
 <hr />
 
 {% for i in response %}
-<div class="row">
-  <div class="col s12 m7">
-    <div class="card">
-      <a href="">
-        <div class="card-image">
-          <img src="{{ i.thumbnail }}" />
-          <span class="card-title purple darken-1 white-text">{{i.title}}</span>
+<div class="home-container">
+  <div class="row">
+    <div class="col s12 m7">
+      <div class="card">
+        <a href="">
+          <div class="card-image">
+            <img src="{{ i.thumbnail }}" />
+            <span class="card-title purple darken-1 white-text"
+              >{{i.title}}</span
+            >
+          </div>
+        </a>
+        <div class="card-content">
+          <p>{{ i.short_description }}</p>
         </div>
-      </a>
-      <div class="card-content">
-        <p>{{ i.short_description }}</p>
-      </div>
-      <div class="card-action">
-        <a href="{{i.game_url}}">See the game</a>
+        <div class="card-action">
+          <a href="{{i.game_url}}">See the game</a>
+        </div>
       </div>
     </div>
   </div>
