@@ -29,9 +29,8 @@ footer {
   margin: 0 450px 0 450px;
 }
 
-.card:hover {
+.card {
   border-radius: 10px;
-  border: red 1px solid;
 }
 
 .bg-radial {
@@ -43,9 +42,6 @@ footer {
   );
 }
 
-.home-container {
-  border: 5px solid blue;
-}
 
 
 
