@@ -21,7 +21,7 @@
 
 ---
 
-### Live link - https://pacific-badlands-47825.herokuapp.com/
+### Live link - [Game Collection](https://pacific-badlands-47825.herokuapp.com/)
 
 ---
 
