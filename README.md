@@ -3,10 +3,10 @@
 ### FUll CRUD Django app where you can add and keep track of games played over the years on any platform. All in one place.
 
 ---
-** pip install -r .\requirements.txt
-Installs projects dependencies
+### pip install -r .\requirements.txt
+Installs project requirements
 
-** python manage.py runserver
+### python manage.py runserver
 Runs an instance of the project in your browser
 
 ## Technolgies and tools
