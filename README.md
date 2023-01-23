@@ -3,6 +3,11 @@
 ### FUll CRUD Django app where you can add and keep track of games played over the years on any platform. All in one place.
 
 ---
+** pip install -r .\requirements.txt
+Installs projects dependencies
+
+** python manage.py runserver
+Runs an instance of the project in your browser
 
 ## Technolgies and tools
 
@@ -18,10 +23,6 @@
   ![Imgur](https://i.imgur.com/LQR0FzV.png)
 ---
   ![Imgur](https://i.imgur.com/bBe2TkT.png)
-
----
-
-### Live link - [Game Collection](https://pacific-badlands-47825.herokuapp.com/)
 
 ---
 
