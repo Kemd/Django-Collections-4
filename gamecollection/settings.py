@@ -78,8 +78,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'gamecollection',
-        'USER': 'dkemc',
-        'PASSWORD': 'password',
+        'USER': 'postgres',
+        'PASSWORD': 'fatalami',
         'HOST': '127.0.0.1',
         'PORT': '5432',
 
@@ -130,5 +130,5 @@ LOGOUT_REDIRECT_URL = '/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-import django_heroku
-django_heroku.settings(locals())
+# import django_heroku
+# django_heroku.settings(locals())
